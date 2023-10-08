@@ -1,0 +1,139 @@
+/* Arquivo styles.css */
+
+/* Definindo variáveis para reutilização de cores */
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #333;
+    --text-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+    color: var(--text-color);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid var(--text-color);
+}
+
+.update-panel {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.update-panel h2 {
+    color: var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.logo img {
+    width: auto; /* Torna a imagem responsiva */
+    max-height: 50px; /* Define uma altura máxima para a logo */
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
